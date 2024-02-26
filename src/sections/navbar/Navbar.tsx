@@ -1,9 +1,11 @@
 import React from 'react'
 import { FaFacebook, FaHeart, FaInstagram, FaLinkedin, FaSearch, FaShoppingCart, FaSignInAlt, FaTruck, FaTwitter } from 'react-icons/fa'
-import { furniture_categories } from '@/utils/data'
 import dropdown_image from '@/../public/images/dropdown-image.jpg'
 import './navbar.css'
 import Image from 'next/image'
+
+import { second_nav_item, furniture_categories } from '@/utils/data'
+
 
 
 
@@ -123,41 +125,17 @@ export default function Navbar() {
             </div>
           </li>
 
-          <li className="second-nav-item">
-            <a href="#" className='second-nav-link'>
-              Cuartos
-            </a>
-          </li>
-
-          <li className="second-nav-item">
-            <a href="#" className='second-nav-link'>
-              Cocina
-            </a>
-          </li>
-
-          <li className="second-nav-item">
-            <a href="#" className='second-nav-link'>
-              Exterior
-            </a>
-          </li>
-
-          <li className="second-nav-item">
-            <a href="#" className='second-nav-link'>
-              Iluminación
-            </a>
-          </li>
-
-          <li className="second-nav-item">
-            <a href="#" className='second-nav-link'>
-              Dormitorio y Baños
-            </a>
-          </li>
-
-          <li className="second-nav-item">
-            <a href="#" className='second-nav-link'>
-              Ventanas
-            </a>
-          </li>    
+          {
+            second_nav_item.map(category => (
+              category ? category.id !== 1 && (
+                <li className='second-nav-item' key={category.id}>
+                  <a href="#" className='second-nav-link'>
+                    { category.title }
+                  </a>
+                </li>
+              ) : null
+            ))
+          }
         
         </ul>
       </nav>      

@@ -1,3 +1,13 @@
+const second_nav_item = [
+    { id: 1, title: "Muebles"},
+    { id: 2, title: "Dormitorios"},
+    { id: 3, title: "Cocina"},
+    { id: 4, title: "Exterior"},
+    { id: 5, title: "Iluminación"},
+    { id: 6, title: "Baño"},
+    { id: 7, title: "Ventanas"},
+]
+
 const furniture_categories = [
     { "id": 1, "title": "Sillas" },
     { "id": 2, "title": "Sofás" },
@@ -18,4 +28,7 @@ const furniture_categories = [
     { "id": 17, "title": "Mesitas de noche" }
 ]
 
-export { furniture_categories }  
+export {
+    second_nav_item, 
+    furniture_categories
+}  

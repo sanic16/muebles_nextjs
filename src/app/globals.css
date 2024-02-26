@@ -4,6 +4,9 @@
   --primary-color: #12376e;
   --secondary-color: #34598f;
   --tertiary-color: #458a9f;
+
+  --color-4: #00154c;
+  --color-5: #23487f;
 }
 
 html{
@@ -31,7 +34,7 @@ a{
 .container{
   display: grid;
   grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 1fr);
-  grid-template-rows: repeat(3, min-content);
+  grid-template-rows: repeat(3, min-content) 70vh repeat(5, min-content);
   row-gap: 1.6rem;
   margin-top: 1.6rem;
 }
