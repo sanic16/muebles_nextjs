@@ -28,7 +28,24 @@ const furniture_categories = [
     { "id": 17, "title": "Mesitas de noche" }
 ]
 
+import bestselling_furniture_kitchen from '@/../public/images/bestsellig-furniture-kitchen.jpg'
+import bestselling_furniture_wardrobe from '@/../public/images/bestsellig-furniture-wardrobe.jpg'
+import bestselling_furniture_sofa from '@/../public/images/bestsellig-furniture-sofa.jpg'
+import bestselling_furniture_table from '@/../public/images/bestsellig-furniture-table.jpg'
+import bestselling_furniture_bed from '@/../public/images/bestsellig-furniture-bed.jpg'
+import bestselling_furniture_chairs from '@/../public/images/bestsellig-furniture-chairs.jpg'
+
+const bestselling = [
+    {id: 1, title: "Cocina",          price: 15000, image: bestselling_furniture_kitchen},
+    {id: 2, title: "Armario",         price: 10000, image: bestselling_furniture_wardrobe},
+    {id: 3, title: "Sofá",            price: 1500, image: bestselling_furniture_sofa},
+    {id: 4, title: "Mesa de comedor", price: 3500, image: bestselling_furniture_table},
+    {id: 5, title: "Cama",            price: 1000, image: bestselling_furniture_bed},
+    {id: 6, title: "Sillas",          price: 500, image: bestselling_furniture_chairs},
+]
+
 export {
     second_nav_item, 
-    furniture_categories
+    furniture_categories,
+    bestselling
 }  
