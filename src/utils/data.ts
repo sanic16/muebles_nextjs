@@ -44,8 +44,37 @@ const bestselling = [
     {id: 6, title: "Sillas",          price: 500, image: bestselling_furniture_chairs},
 ]
 
+import gallery_img_1 from '@/../public/images/gallery-img-1.jpeg'
+import gallery_img_2 from '@/../public/images/gallery-img-2.jpeg'
+import gallery_img_3 from '@/../public/images/gallery-img-3.jpeg'
+import gallery_img_4 from '@/../public/images/gallery-img-4.jpeg'
+import gallery_img_5 from '@/../public/images/gallery-img-5.jpeg'
+import gallery_img_6 from '@/../public/images/gallery-img-6.jpeg'
+import gallery_img_7 from '@/../public/images/gallery-img-7.jpeg'
+import gallery_img_8 from '@/../public/images/gallery-img-8.jpeg'
+import gallery_img_9 from '@/../public/images/gallery-img-9.jpeg'
+import gallery_img_10 from '@/../public/images/gallery-img-10.jpeg'
+import gallery_img_11 from '@/../public/images/gallery-img-11.jpeg'
+import gallery_img_12 from '@/../public/images/gallery-img-12.jpeg'
+
+const gallery = [
+    { id: 1, image: gallery_img_1 },
+    { id: 2, image: gallery_img_2 },
+    { id: 3, image: gallery_img_3 },
+    { id: 4, image: gallery_img_4 },
+    { id: 5, image: gallery_img_5 },
+    { id: 6, image: gallery_img_6 },
+    { id: 7, image: gallery_img_7 },
+    { id: 8, image: gallery_img_8 },
+    { id: 9, image: gallery_img_9 },
+    { id: 10, image: gallery_img_10 },
+    { id: 11, image: gallery_img_11 },
+    { id: 12, image: gallery_img_12}
+]
+
 export {
     second_nav_item, 
     furniture_categories,
-    bestselling
+    bestselling,
+    gallery
 }  
