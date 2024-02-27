@@ -177,3 +177,9 @@
     animation: none;
     left: -300%;
 }
+
+@media screen and (max-width: 1250px){
+    .banner-heading{
+        font-size: 8rem;
+    }
+}

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { FaFacebook, FaHeart, FaInstagram, FaLinkedin, FaSearch, FaShoppingCart, FaSignInAlt, FaTruck, FaTwitter } from 'react-icons/fa'
 import dropdown_image from '@/../public/images/dropdown-image.jpg'
@@ -5,11 +6,13 @@ import './navbar.css'
 import Image from 'next/image'
 
 import { second_nav_item, furniture_categories } from '@/utils/data'
+import useModalContext from '@/context/modal-context'
 
 
 
 
 export default function Navbar() {
+  const { openModal } = useModalContext()
   return (
     <>
       <ul className='social-icons'>
@@ -45,7 +48,7 @@ export default function Navbar() {
         <ul className='first-nav-list'>
 
           <li className='first-nav-item'>
-            <a href="#" className='first-nav-link'>
+            <a href="#" className='first-nav-link' onClick={openModal}>
               <FaSignInAlt />
               Sign Up / Log In
             </a>

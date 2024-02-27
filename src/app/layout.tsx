@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Alegreya } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/sections/navbar/Navbar";
+import { ModalContextProvider } from "@/context/modal-context";
+import Modal from "@/components/modal/Modal";
 
 const alegreya = Alegreya({ subsets: ["latin"] });
 
@@ -18,11 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={alegreya.className}>
-        
-        <div className="container">
-          <Navbar />
-          {children}
-        </div>
+        <ModalContextProvider>
+          <div className="container">
+            <Navbar />
+            {children}
+          </div>
+          <Modal />
+        </ModalContextProvider>
       </body>
     </html>
   );
