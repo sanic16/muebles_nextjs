@@ -5,7 +5,12 @@ import Navbar from "@/sections/navbar/Navbar";
 import { ModalContextProvider } from "@/context/modal-context";
 import Modal from "@/components/modal/Modal";
 
-const alegreya = Alegreya({ subsets: ["latin"] });
+const alegreya = Alegreya({ 
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"] 
+
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",

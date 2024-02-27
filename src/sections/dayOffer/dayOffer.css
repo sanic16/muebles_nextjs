@@ -58,3 +58,60 @@
     align-self: end;
 }
 
+@media screen and (max-width: 1250px){
+    .day-offer-heading{
+        font-size: 5rem;
+    }
+
+    .day-offer-paragraph{
+        font-size: 3rem;
+        text-wrap: balance;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .day-offer-heading{
+        font-size: 4.5rem;
+    }
+
+    .day-offer-paragraph{
+        font-size: 2.5rem;
+    }
+
+    .day-offer-img-one{
+        align-self: end;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .day-offer-heading{
+        font-size: 4rem;
+    }
+
+    .day-offer-paragraph{
+        font-size: 2rem;
+    }
+
+    .day-offer-btn{
+        width: 14rem;
+        padding: .8rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .day-offer{
+        column-gap: 1.4rem;
+    }
+
+    .day-offer-heading{
+        font-size: 3rem;
+    }
+
+    .day-offer-paragraph{
+        font-size: 1.6rem;
+    }
+
+    
+}

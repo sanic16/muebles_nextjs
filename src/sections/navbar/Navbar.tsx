@@ -94,6 +94,7 @@ export default function Navbar() {
             <a href="#" className='second-nav-link'>
               Muebles
             </a>
+
             <div className="dropdown">
               <ul className='dropdown-first-list'>
 
@@ -126,6 +127,7 @@ export default function Navbar() {
               </ul>
               <Image src={dropdown_image} alt='' className='dropdown-image' /> 
             </div>
+            
           </li>
 
           {

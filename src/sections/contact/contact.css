@@ -41,3 +41,20 @@
 .contact-btn:hover{
     background-color: var(--primary-color);
 }
+
+@media screen and (max-width: 600px){
+    .contact{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 2rem;
+    }
+
+    .contact-heading{
+        font-size: 1.8rem;
+        justify-self: center;
+    }
+
+    .contact-form{
+        justify-self: center;
+    }
+}

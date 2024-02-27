@@ -14,9 +14,9 @@
 .forms-wrapper{
     background-color: #eee;
     position: fixed;
-    top: 25%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     z-index: 300;
     padding: 2rem;
     border: .1rem solid var(--secondary-color);
@@ -122,4 +122,22 @@
 .show-login-form{
     color: #888;
     background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1000px){
+    .forms-wrapper form{
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .forms-wrapper form{
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .forms-wrapper form{
+        width: 25rem;
+    }
 }

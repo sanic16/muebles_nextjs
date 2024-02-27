@@ -58,3 +58,15 @@
 .bestselling-furniture-btn:hover{
     background-color: #23487f;
 }
+
+@media screen and (max-width: 800px){
+    .bestselling-furniture-header{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .bestselling-furniture-header{
+        font-size: 3.5rem;
+    }
+}

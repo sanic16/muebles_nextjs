@@ -38,3 +38,22 @@ a{
   row-gap: 1.6rem;
   margin-top: 1.6rem;
 }
+
+@media screen and (max-width: 1000px){
+  .container{
+    grid-template-columns: minmax(4rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(4rem, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px){
+  .container{
+    grid-template-columns: minmax(2rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(2rem, 1fr);
+    grid-template-rows: repeat(3, min-content) 50vh repeat(5, min-content);
+  }
+}
+
+@media screen and (max-width: 600px){
+  .container{
+    grid-template-columns: minmax(1rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(1rem, 1fr);
+  }
+}
